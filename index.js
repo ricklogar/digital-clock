@@ -21,8 +21,6 @@ function updateClock(){
     minuteEl.innerText = m;
     secondsEl.innerText = s;
     ampmEl.innerText = ampm;
-
-    setTimeout(() => {updateClock()},1000 );
 }
-
+setInterval(updateClock, 1000); 
 updateClock();
